@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="languagetrainer.LanguageTrainerGUIController">
+   <children>
+      <Label layoutX="41.0" layoutY="20.0" prefHeight="54.0" prefWidth="508.0" text="LANGUAGE TRAINER v 1.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="133.0" text="Question:" />
+      <Label fx:id="toggleLabel" layoutX="43.0" layoutY="200.0" text="Guess:" />
+      <TextField fx:id="questionField" layoutX="121.0" layoutY="129.0" prefHeight="25.0" prefWidth="324.0" promptText="Press the new button to get a new word" />
+      <TextField fx:id="guessField" layoutX="121.0" layoutY="196.0" prefHeight="25.0" prefWidth="324.0" promptText="Write your guess here and press guess for answer" />
+      <Button fx:id="newButton" layoutX="476.0" layoutY="129.0" mnemonicParsing="false" onAction="#newButtonAction" prefHeight="25.0" prefWidth="71.0" text="New" />
+      <Button fx:id="guessButton" layoutX="476.0" layoutY="196.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="Guess" />
+      <Button fx:id="createButton" layoutX="478.0" layoutY="331.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="Create" />
+      <Button layoutX="393.0" layoutY="331.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="Look up" />
+      <Label layoutX="41.0" layoutY="265.0" text="The answer was:" />
+      <Label fx:id="answerLabel" layoutX="137.0" layoutY="265.0" prefHeight="17.0" prefWidth="179.0" />
+   </children>
+</AnchorPane>
